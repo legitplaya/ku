@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ip521_Sofronov_KRDataSet1" targetNamespace="http://tempuri.org/ip521_Sofronov_KRDataSet1.xsd" xmlns:mstns="http://tempuri.org/ip521_Sofronov_KRDataSet1.xsd" xmlns="http://tempuri.org/ip521_Sofronov_KRDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ip521_Sofronov_KRConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ip521_Sofronov_KRConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.kursRab.Properties.Settings.GlobalReference.Default.ip521_Sofronov_KRConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Билеты купленные за 20 летTableAdapter" GeneratorDataComponentClassName="Билеты_купленные_за_20_летTableAdapter" Name="Билеты купленные за 20 лет" UserDataComponentName="Билеты купленные за 20 летTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Билеты купленные за 20 лет]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ticket_data, Sum FROM dbo.[Билеты купленные за 20 лет]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ticket_data" DataSetColumn="ticket_data" />
+              <Mapping SourceColumn="Sum" DataSetColumn="Sum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Кол-во занятых заловTableAdapter" GeneratorDataComponentClassName="Кол_во_занятых_заловTableAdapter" Name="Кол-во занятых залов" UserDataComponentName="Кол-во занятых заловTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Кол-во занятых залов]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [_rooms] FROM dbo.[Кол-во занятых залов]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="_rooms" DataSetColumn="_rooms" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Кол-во купленных билетов дороже 500 рублейTableAdapter" GeneratorDataComponentClassName="Кол_во_купленных_билетов_дороже_500_рублейTableAdapter" Name="Кол-во купленных билетов дороже 500 рублей" UserDataComponentName="Кол-во купленных билетов дороже 500 рублейTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Кол-во купленных билетов дороже 500 рублей]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ticket_cost, Expr1 FROM dbo.[Кол-во купленных билетов дороже 500 рублей]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ticket_cost" DataSetColumn="ticket_cost" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Кол-во свободных заловTableAdapter" GeneratorDataComponentClassName="Кол_во_свободных_заловTableAdapter" Name="Кол-во свободных залов" UserDataComponentName="Кол-во свободных заловTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Кол-во свободных залов]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Free_rooms FROM dbo.[Кол-во свободных залов]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Free_rooms" DataSetColumn="Free_rooms" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Кол-во сеансов в 1 зале за все времяTableAdapter" GeneratorDataComponentClassName="Кол_во_сеансов_в_1_зале_за_все_времяTableAdapter" Name="Кол-во сеансов в 1 зале за все время" UserDataComponentName="Кол-во сеансов в 1 зале за все времяTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Кол-во сеансов в 1 зале за все время]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT room_id, [Кол-во сеансов] FROM dbo.[Кол-во сеансов в 1 зале за все время]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="room_id" DataSetColumn="room_id" />
+              <Mapping SourceColumn="Кол-во сеансов" DataSetColumn="Кол-во сеансов" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Максимальная стоимость билетаTableAdapter" GeneratorDataComponentClassName="Максимальная_стоимость_билетаTableAdapter" Name="Максимальная стоимость билета" UserDataComponentName="Максимальная стоимость билетаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Максимальная стоимость билета]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Cost FROM dbo.[Максимальная стоимость билета]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Минимальная стоимость билетаTableAdapter" GeneratorDataComponentClassName="Минимальная_стоимость_билетаTableAdapter" Name="Минимальная стоимость билета" UserDataComponentName="Минимальная стоимость билетаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Минимальная стоимость билета]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Cost FROM dbo.[Минимальная стоимость билета]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Посетители старше 18 летTableAdapter" GeneratorDataComponentClassName="Посетители_старше_18_летTableAdapter" Name="Посетители старше 18 лет" UserDataComponentName="Посетители старше 18 летTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Посетители старше 18 лет]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT customer_id, customer_name, customer_age FROM dbo.[Посетители старше 18 лет]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="customer_id" DataSetColumn="customer_id" />
+              <Mapping SourceColumn="customer_name" DataSetColumn="customer_name" />
+              <Mapping SourceColumn="customer_age" DataSetColumn="customer_age" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="самый первый купленный билетTableAdapter" GeneratorDataComponentClassName="самый_первый_купленный_билетTableAdapter" Name="самый первый купленный билет" UserDataComponentName="самый первый купленный билетTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[самый первый купленный билет]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ticket_data FROM dbo.[самый первый купленный билет]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ticket_data" DataSetColumn="ticket_data" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Фильмы для лиц старше 17 летTableAdapter" GeneratorDataComponentClassName="Фильмы_для_лиц_старше_17_летTableAdapter" Name="Фильмы для лиц старше 17 лет" UserDataComponentName="Фильмы для лиц старше 17 летTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ip521_Sofronov_KRConnectionString (Settings)" DbObjectName="ip521_Sofronov_KR.dbo.[Фильмы для лиц старше 17 лет]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT film_id, film_name, film_age_restriction FROM dbo.[Фильмы для лиц старше 17 лет]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="film_id" DataSetColumn="film_id" />
+              <Mapping SourceColumn="film_name" DataSetColumn="film_name" />
+              <Mapping SourceColumn="film_age_restriction" DataSetColumn="film_age_restriction" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ip521_Sofronov_KRDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ip521_Sofronov_KRDataSet1" msprop:Generator_UserDSName="ip521_Sofronov_KRDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Билеты_x0020_купленные_x0020_за_x0020_20_x0020_лет" msprop:Generator_TableClassName="Билеты_купленные_за_20_летDataTable" msprop:Generator_TableVarName="tableБилеты_купленные_за_20_лет" msprop:Generator_TablePropName="Билеты_купленные_за_20_лет" msprop:Generator_RowDeletingName="Билеты_купленные_за_20_летRowDeleting" msprop:Generator_RowChangingName="Билеты_купленные_за_20_летRowChanging" msprop:Generator_RowEvHandlerName="Билеты_купленные_за_20_летRowChangeEventHandler" msprop:Generator_RowDeletedName="Билеты_купленные_за_20_летRowDeleted" msprop:Generator_UserTableName="Билеты купленные за 20 лет" msprop:Generator_RowChangedName="Билеты_купленные_за_20_летRowChanged" msprop:Generator_RowEvArgName="Билеты_купленные_за_20_летRowChangeEvent" msprop:Generator_RowClassName="Билеты_купленные_за_20_летRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ticket_data" msprop:Generator_ColumnVarNameInTable="columnticket_data" msprop:Generator_ColumnPropNameInRow="ticket_data" msprop:Generator_ColumnPropNameInTable="ticket_dataColumn" msprop:Generator_UserColumnName="ticket_data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sum" msprop:Generator_ColumnVarNameInTable="columnSum" msprop:Generator_ColumnPropNameInRow="Sum" msprop:Generator_ColumnPropNameInTable="SumColumn" msprop:Generator_UserColumnName="Sum" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Кол-во_x0020_занятых_x0020_залов" msprop:Generator_TableClassName="_Кол_во_занятых_заловDataTable" msprop:Generator_TableVarName="_tableКол_во_занятых_залов" msprop:Generator_TablePropName="_Кол_во_занятых_залов" msprop:Generator_RowDeletingName="_Кол_во_занятых_заловRowDeleting" msprop:Generator_RowChangingName="_Кол_во_занятых_заловRowChanging" msprop:Generator_RowEvHandlerName="_Кол_во_занятых_заловRowChangeEventHandler" msprop:Generator_RowDeletedName="_Кол_во_занятых_заловRowDeleted" msprop:Generator_UserTableName="Кол-во занятых залов" msprop:Generator_RowChangedName="_Кол_во_занятых_заловRowChanged" msprop:Generator_RowEvArgName="_Кол_во_занятых_заловRowChangeEvent" msprop:Generator_RowClassName="_Кол_во_занятых_заловRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_rooms" msprop:Generator_ColumnVarNameInTable="column_rooms" msprop:Generator_ColumnPropNameInRow="_rooms" msprop:Generator_ColumnPropNameInTable="_roomsColumn" msprop:Generator_UserColumnName="_rooms" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Кол-во_x0020_купленных_x0020_билетов_x0020_дороже_x0020_500_x0020_рублей" msprop:Generator_TableClassName="_Кол_во_купленных_билетов_дороже_500_рублейDataTable" msprop:Generator_TableVarName="_tableКол_во_купленных_билетов_дороже_500_рублей" msprop:Generator_TablePropName="_Кол_во_купленных_билетов_дороже_500_рублей" msprop:Generator_RowDeletingName="_Кол_во_купленных_билетов_дороже_500_рублейRowDeleting" msprop:Generator_RowChangingName="_Кол_во_купленных_билетов_дороже_500_рублейRowChanging" msprop:Generator_RowEvHandlerName="_Кол_во_купленных_билетов_дороже_500_рублейRowChangeEventHandler" msprop:Generator_RowDeletedName="_Кол_во_купленных_билетов_дороже_500_рублейRowDeleted" msprop:Generator_UserTableName="Кол-во купленных билетов дороже 500 рублей" msprop:Generator_RowChangedName="_Кол_во_купленных_билетов_дороже_500_рублейRowChanged" msprop:Generator_RowEvArgName="_Кол_во_купленных_билетов_дороже_500_рублейRowChangeEvent" msprop:Generator_RowClassName="_Кол_во_купленных_билетов_дороже_500_рублейRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ticket_cost" msprop:Generator_ColumnVarNameInTable="columnticket_cost" msprop:Generator_ColumnPropNameInRow="ticket_cost" msprop:Generator_ColumnPropNameInTable="ticket_costColumn" msprop:Generator_UserColumnName="ticket_cost" type="xs:double" minOccurs="0" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Кол-во_x0020_свободных_x0020_залов" msprop:Generator_TableClassName="_Кол_во_свободных_заловDataTable" msprop:Generator_TableVarName="_tableКол_во_свободных_залов" msprop:Generator_TablePropName="_Кол_во_свободных_залов" msprop:Generator_RowDeletingName="_Кол_во_свободных_заловRowDeleting" msprop:Generator_RowChangingName="_Кол_во_свободных_заловRowChanging" msprop:Generator_RowEvHandlerName="_Кол_во_свободных_заловRowChangeEventHandler" msprop:Generator_RowDeletedName="_Кол_во_свободных_заловRowDeleted" msprop:Generator_UserTableName="Кол-во свободных залов" msprop:Generator_RowChangedName="_Кол_во_свободных_заловRowChanged" msprop:Generator_RowEvArgName="_Кол_во_свободных_заловRowChangeEvent" msprop:Generator_RowClassName="_Кол_во_свободных_заловRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Free_rooms" msprop:Generator_ColumnVarNameInTable="columnFree_rooms" msprop:Generator_ColumnPropNameInRow="Free_rooms" msprop:Generator_ColumnPropNameInTable="Free_roomsColumn" msprop:Generator_UserColumnName="Free_rooms" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Кол-во_x0020_сеансов_x0020_в_x0020_1_x0020_зале_x0020_за_x0020_все_x0020_время" msprop:Generator_TableClassName="_Кол_во_сеансов_в_1_зале_за_все_времяDataTable" msprop:Generator_TableVarName="_tableКол_во_сеансов_в_1_зале_за_все_время" msprop:Generator_TablePropName="_Кол_во_сеансов_в_1_зале_за_все_время" msprop:Generator_RowDeletingName="_Кол_во_сеансов_в_1_зале_за_все_времяRowDeleting" msprop:Generator_RowChangingName="_Кол_во_сеансов_в_1_зале_за_все_времяRowChanging" msprop:Generator_RowEvHandlerName="_Кол_во_сеансов_в_1_зале_за_все_времяRowChangeEventHandler" msprop:Generator_RowDeletedName="_Кол_во_сеансов_в_1_зале_за_все_времяRowDeleted" msprop:Generator_UserTableName="Кол-во сеансов в 1 зале за все время" msprop:Generator_RowChangedName="_Кол_во_сеансов_в_1_зале_за_все_времяRowChanged" msprop:Generator_RowEvArgName="_Кол_во_сеансов_в_1_зале_за_все_времяRowChangeEvent" msprop:Generator_RowClassName="_Кол_во_сеансов_в_1_зале_за_все_времяRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="room_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnroom_id" msprop:Generator_ColumnPropNameInRow="room_id" msprop:Generator_ColumnPropNameInTable="room_idColumn" msprop:Generator_UserColumnName="room_id" type="xs:int" />
+              <xs:element name="Кол-во_x0020_сеансов" msprop:Generator_ColumnVarNameInTable="_columnКол_во_сеансов" msprop:Generator_ColumnPropNameInRow="_Кол_во_сеансов" msprop:Generator_ColumnPropNameInTable="_Кол_во_сеансовColumn" msprop:Generator_UserColumnName="Кол-во сеансов" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Максимальная_x0020_стоимость_x0020_билета" msprop:Generator_TableClassName="Максимальная_стоимость_билетаDataTable" msprop:Generator_TableVarName="tableМаксимальная_стоимость_билета" msprop:Generator_TablePropName="Максимальная_стоимость_билета" msprop:Generator_RowDeletingName="Максимальная_стоимость_билетаRowDeleting" msprop:Generator_RowChangingName="Максимальная_стоимость_билетаRowChanging" msprop:Generator_RowEvHandlerName="Максимальная_стоимость_билетаRowChangeEventHandler" msprop:Generator_RowDeletedName="Максимальная_стоимость_билетаRowDeleted" msprop:Generator_UserTableName="Максимальная стоимость билета" msprop:Generator_RowChangedName="Максимальная_стоимость_билетаRowChanged" msprop:Generator_RowEvArgName="Максимальная_стоимость_билетаRowChangeEvent" msprop:Generator_RowClassName="Максимальная_стоимость_билетаRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_UserColumnName="Cost" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Минимальная_x0020_стоимость_x0020_билета" msprop:Generator_TableClassName="Минимальная_стоимость_билетаDataTable" msprop:Generator_TableVarName="tableМинимальная_стоимость_билета" msprop:Generator_TablePropName="Минимальная_стоимость_билета" msprop:Generator_RowDeletingName="Минимальная_стоимость_билетаRowDeleting" msprop:Generator_RowChangingName="Минимальная_стоимость_билетаRowChanging" msprop:Generator_RowEvHandlerName="Минимальная_стоимость_билетаRowChangeEventHandler" msprop:Generator_RowDeletedName="Минимальная_стоимость_билетаRowDeleted" msprop:Generator_UserTableName="Минимальная стоимость билета" msprop:Generator_RowChangedName="Минимальная_стоимость_билетаRowChanged" msprop:Generator_RowEvArgName="Минимальная_стоимость_билетаRowChangeEvent" msprop:Generator_RowClassName="Минимальная_стоимость_билетаRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_UserColumnName="Cost" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Посетители_x0020_старше_x0020_18_x0020_лет" msprop:Generator_TableClassName="Посетители_старше_18_летDataTable" msprop:Generator_TableVarName="tableПосетители_старше_18_лет" msprop:Generator_TablePropName="Посетители_старше_18_лет" msprop:Generator_RowDeletingName="Посетители_старше_18_летRowDeleting" msprop:Generator_RowChangingName="Посетители_старше_18_летRowChanging" msprop:Generator_RowEvHandlerName="Посетители_старше_18_летRowChangeEventHandler" msprop:Generator_RowDeletedName="Посетители_старше_18_летRowDeleted" msprop:Generator_UserTableName="Посетители старше 18 лет" msprop:Generator_RowChangedName="Посетители_старше_18_летRowChanged" msprop:Generator_RowEvArgName="Посетители_старше_18_летRowChangeEvent" msprop:Generator_RowClassName="Посетители_старше_18_летRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="customer_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncustomer_id" msprop:Generator_ColumnPropNameInRow="customer_id" msprop:Generator_ColumnPropNameInTable="customer_idColumn" msprop:Generator_UserColumnName="customer_id" type="xs:int" />
+              <xs:element name="customer_name" msprop:Generator_ColumnVarNameInTable="columncustomer_name" msprop:Generator_ColumnPropNameInRow="customer_name" msprop:Generator_ColumnPropNameInTable="customer_nameColumn" msprop:Generator_UserColumnName="customer_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="customer_age" msprop:Generator_ColumnVarNameInTable="columncustomer_age" msprop:Generator_ColumnPropNameInRow="customer_age" msprop:Generator_ColumnPropNameInTable="customer_ageColumn" msprop:Generator_UserColumnName="customer_age" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="самый_x0020_первый_x0020_купленный_x0020_билет" msprop:Generator_TableClassName="самый_первый_купленный_билетDataTable" msprop:Generator_TableVarName="tableсамый_первый_купленный_билет" msprop:Generator_TablePropName="самый_первый_купленный_билет" msprop:Generator_RowDeletingName="самый_первый_купленный_билетRowDeleting" msprop:Generator_RowChangingName="самый_первый_купленный_билетRowChanging" msprop:Generator_RowEvHandlerName="самый_первый_купленный_билетRowChangeEventHandler" msprop:Generator_RowDeletedName="самый_первый_купленный_билетRowDeleted" msprop:Generator_UserTableName="самый первый купленный билет" msprop:Generator_RowChangedName="самый_первый_купленный_билетRowChanged" msprop:Generator_RowEvArgName="самый_первый_купленный_билетRowChangeEvent" msprop:Generator_RowClassName="самый_первый_купленный_билетRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ticket_data" msprop:Generator_ColumnVarNameInTable="columnticket_data" msprop:Generator_ColumnPropNameInRow="ticket_data" msprop:Generator_ColumnPropNameInTable="ticket_dataColumn" msprop:Generator_UserColumnName="ticket_data" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Фильмы_x0020_для_x0020_лиц_x0020_старше_x0020_17_x0020_лет" msprop:Generator_TableClassName="Фильмы_для_лиц_старше_17_летDataTable" msprop:Generator_TableVarName="tableФильмы_для_лиц_старше_17_лет" msprop:Generator_TablePropName="Фильмы_для_лиц_старше_17_лет" msprop:Generator_RowDeletingName="Фильмы_для_лиц_старше_17_летRowDeleting" msprop:Generator_RowChangingName="Фильмы_для_лиц_старше_17_летRowChanging" msprop:Generator_RowEvHandlerName="Фильмы_для_лиц_старше_17_летRowChangeEventHandler" msprop:Generator_RowDeletedName="Фильмы_для_лиц_старше_17_летRowDeleted" msprop:Generator_UserTableName="Фильмы для лиц старше 17 лет" msprop:Generator_RowChangedName="Фильмы_для_лиц_старше_17_летRowChanged" msprop:Generator_RowEvArgName="Фильмы_для_лиц_старше_17_летRowChangeEvent" msprop:Generator_RowClassName="Фильмы_для_лиц_старше_17_летRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="film_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnfilm_id" msprop:Generator_ColumnPropNameInRow="film_id" msprop:Generator_ColumnPropNameInTable="film_idColumn" msprop:Generator_UserColumnName="film_id" type="xs:int" />
+              <xs:element name="film_name" msprop:Generator_ColumnVarNameInTable="columnfilm_name" msprop:Generator_ColumnPropNameInRow="film_name" msprop:Generator_ColumnPropNameInTable="film_nameColumn" msprop:Generator_UserColumnName="film_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="film_age_restriction" msprop:Generator_ColumnVarNameInTable="columnfilm_age_restriction" msprop:Generator_ColumnPropNameInRow="film_age_restriction" msprop:Generator_ColumnPropNameInTable="film_age_restrictionColumn" msprop:Generator_UserColumnName="film_age_restriction" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Посетители_x0020_старше_x0020_18_x0020_лет" />
+      <xs:field xpath="mstns:customer_id" />
+    </xs:unique>
+    <xs:unique name="Фильмы_x0020_для_x0020_лиц_x0020_старше_x0020_17_x0020_лет_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Фильмы_x0020_для_x0020_лиц_x0020_старше_x0020_17_x0020_лет" />
+      <xs:field xpath="mstns:film_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
